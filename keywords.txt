@@ -1,0 +1,11 @@
+mwc_stepper	KEYWORD1
+
+ init KEYWORD2
+ active KEYWORD2
+ run KEYWORD2
+ set KEYWORD2
+ run KEYWORD2
+ 
+ RPM LITERAL1
+ PULSE LITERAL1
+
