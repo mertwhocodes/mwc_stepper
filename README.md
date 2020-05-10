@@ -1,3 +1,4 @@
+[![arduino-library-badge](https://www.ardu-badge.com/badge/mwc_stepper.svg?)](https://www.ardu-badge.com/mwc_stepper)
 # MWC_Stepper Step Driver 
  Arduino Step Motor Driver Library. For more information about that library usage, go to my blog page [mertwhocodes-step-driver]( http://mertwhocodes.com/index.php/en/2020/05/08/stepper-motor-driver-with-arduino/)
   
