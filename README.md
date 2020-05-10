@@ -23,12 +23,12 @@ A4988, DRV8825, DRV8834, DRV8880,TB6600... and generic two-pin stepper motor dri
 # **Functions**
 ```c
 void init(); //makes pin configuration 
-void active(bool _active); //makes enable pin low 
+void active(bool _active); //makes enable pin LOW(active)or HIGH(deactive)
 void run(uint64_t _rpmt);//motor rotation start with RPM value 
 void set(bool _dir, uint8_t _rpm, uint16_t _pulse);//sets direction ,RPM value and steppping value
 void run();//motor rotation start with last setted RPM value
  ```
- Before use ```c run();``` function ```c set();``` function have to configure. 
+ Before use ```run();``` function ```set();``` function have to configure. 
 # **Code**
 See basic two direction stepping 1:8 1 tour for each direction example.
 ```c
