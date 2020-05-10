@@ -20,6 +20,15 @@ A4988, DRV8825, DRV8834, DRV8880,TB6600... and generic two-pin stepper motor dri
 - PUL+	**-** Arduino Pin 3
 - A-, A+	**-** Coil 1 stepper motor
 - B-, B+	**-** Coil 2 stepper motor
+# **Functions**
+```c
+void init(); //makes pin configuration 
+void active(bool _active); //makes enable pin low 
+void run(uint64_t _rpmt);//motor rotation start with RPM value 
+void set(bool _dir, uint8_t _rpm, uint16_t _pulse);//sets direction ,RPM value and steppping value
+void run();//motor rotation start with last setted RPM value
+ ```
+ Before use ```c run();``` function ```c set();``` function have to configure. 
 # **Code**
 See basic two direction stepping 1:8 1 tour for each direction example.
 ```c
@@ -48,7 +57,6 @@ void setup() {
 
 	nema23.init();
 	
-	//nema23.active(DEACTIVE);
 }
 
 void loop() {
@@ -65,7 +73,7 @@ void loop() {
 
 	for (size_t i = 0; i < 1600; i++)
 	{
-		//nema23.run();
+		nema23.run();
 	}
 }
 
